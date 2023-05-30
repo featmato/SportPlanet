@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: Tahoma, sans-serif;
+
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 600;
+}
+
+h1 { font-size: 70px; }
+h2 { font-size: 36px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+body {
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/hokej.jpeg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
+}
+
+#header {
+    min-height: 120px;
+    width: 100%;
+	color: #FFF;
+	position: relative;
+    background-color: rgba(51, 49, 49, 0.496);
+    box-shadow: 0px 2px 20px rgb(45, 45, 45);
+
+}
+
+#header a.logo {
+    color:#ffffff;
+	text-decoration: none;
+	font-size: 2.5rem;
+    display: inline-block;
+	padding: 0px 0px 0px 35px;
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+
+#header a.logo span {
+    font-weight: 900;
+    color: #ffffff;
+}
+#header a.logo h2 {
+    font-weight: 500;
+    text-indent: 85px;
+}
+
+#header .menu {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: 55px;
+    top: 5px;
+    float: right;
+    right: 2px;
+    color: rgb(189, 189, 189);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#header .menu ul {
+    width: 100%;
+    list-style: none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#header .menu ul li {
+    display: inline-block;
+}
+
+#header .menu ul li a {
+    color: rgb(189, 189, 189);
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 30px 16px 30px;
+}
+
+
+#header .menu ul li a:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: 10px 28px 10px 28px;
+}
+
+#header .menu ul li a:hover img {
+    opacity: 1;
+}
+
+#header .menu .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: rgb(189, 189, 189);;
+    padding: 0px 30px 0px 30px;
+    background-color: inherit;
+    font: inherit; 
+    margin: 0; 
+}
+
+#header .menu .dropdown:hover .dropbtn {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: 10px 28px 10px 28px;
+}
+
+#header .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #292727da;
+    width: 20%;
+    height: auto;
+    right: 6%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+
+#header .menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header .menu .column {
+    width: 100%;
+    height: 100%;
+}
+
+#header .menu .column a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#header .menu .column a:hover {
+    background-color: #dddddd3d;
+    padding: 14px 0px 14px 0px;
+    border-radius: 50px;
+}
+
+#header .menu .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------*/
+main {
+    position: relative;
+    width: 100%;
+    height: 87%;
+}
+
+main .match {
+    position: absolute;
+    top: 10px;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.244);
+}
+
+/*--------------*/
+
+footer {
+    position: relative;
+}
+
+footer .footer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #3c3a3aba;
+    box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
+}
+
+
+footer .footer .logof {
+    position: relative;
+    font-size: 2.3rem;
+    text-decoration: none;
+    left: 45%;
+}
+
+footer .footer .logof  span {
+    position: absolute;
+    color: white;
+    font-weight: 900;
+}
+
+footer .footer .logof  h2 {
+    font-weight: 500;
+    position: absolute;
+    color: white;
+    text-indent: 85%;
+}
+
+footer .line {
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.333);
+    top: 95px;
+    left: 50%; 
+    transform:translate(-50%,-50%);
+}
+
+footer .contact {
+    position: relative;
+    right: 5%;
+    width: 100%;
+    top: 60px;
+    opacity: 0.6;
+}
+
+footer .contact .facebook a img {
+    position: absolute;
+    right: 160px;
+    width: 50px;
+}
+
+footer .contact .instagram a img {
+    position: absolute;
+    right: 80px;
+    width: 50px;
+}
+
+footer .contact .twitter a img {
+    position: absolute;
+    right: 0px;
+    width: 50px;
+}
+
+footer .contact .text {
+    display: flex;
+    justify-content: center;
+}
+
+footer .contact .text p {
+    color: rgb(255, 255, 255);
+    padding-left: 200px;
+}
+
+
+
+
+
