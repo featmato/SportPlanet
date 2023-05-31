@@ -41,10 +41,9 @@ p {
 }
 
 body {
-    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../img/hokej.jpeg) no-repeat;
-    background-size: cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hokej.jpeg) no-repeat top center;
+    background-size: 150%;
     backdrop-filter: blur(10px);
-    
 }
 
 #header {
@@ -146,7 +145,7 @@ body {
     position: absolute;
     background-color: #292727da;
     width: 20%;
-    height: auto;
+    height: 370px;
     right: 6%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
     z-index: 1;
@@ -182,15 +181,20 @@ body {
     display: table;
     clear: both;
 }
-
-/*------------*/
-main {
-    position: relative;
-    width: 100%;
-    height: 87%;
+/**/
+#header .menu .dropdown .dropdown-content .row .column .responsive a {
+    color: rgba(255, 255, 255, 0);
+    pointer-events: none
 }
 
-main .match {
+/*------------*/
+.main {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main .match {
     position: absolute;
     top: 10px;
     height: 90px;
@@ -198,10 +202,118 @@ main .match {
     background-color: rgba(23, 23, 23, 0.244);
 }
 
+.main .match h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.826);
+}
+
+.main .container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 120px 120px;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+.main .container .game {
+    background-color: rgba(0, 0, 0, 0.448);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.main .container .game img {
+    margin: 20px 10% 20px 10%;
+    display: inline-flex;
+    width: 80px;
+}
+
+.main .container .game p {
+    margin-top: -75px;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.305);
+}
+
+.zapas .upcoming {
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 100%;
+    height: 90%;
+    box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
+    background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
+}
+
+.zapas .upcoming .head {
+    position: relative;
+
+}
+
+.zapas .upcoming .head h2 {
+    color: rgba(255, 255, 255, 0.826);
+    padding: 50px;
+    background-color:  rgba(23, 23, 23, 0.244);
+}
+
+.zapas .upcoming .container {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 120px 120px 120px 120px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.zapas .upcoming .container .game {
+    background-color: rgba(0, 0, 0, 0.448);
+    border-radius: 25px;
+}
+
+.zapas .upcoming .container .game .panel {
+    background-color: rgba(255, 255, 255, 0.519);
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: auto auto auto;
+    padding-left: 40px;
+
+}
+
+.zapas .upcoming .container .game .udaje {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: auto auto auto ;
+}
+
+.zapas .upcoming .container .game .udaje h5 {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.83);
+
+}
+
+.zapas .upcoming .container .game .udaje .image {
+    padding-top: 15px;
+}
+
+.zapas .upcoming .container .game .udaje .image img {
+    width: 60px;
+    height: 60px;
+}
+
 /*--------------*/
 
 footer {
-    position: relative;
+    position: static;
+    display: block;
 }
 
 footer .footer {
@@ -211,7 +323,6 @@ footer .footer {
     background-color: #3c3a3aba;
     box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
 }
-
 
 footer .footer .logof {
     position: relative;
@@ -279,6 +390,520 @@ footer .contact .text p {
     padding-left: 200px;
 }
 
+
+/* resposive */
+
+@media all and (max-width: 1433px){
+    #header {
+        min-height: 120px;
+        width: 100%;
+        color: #FFF;
+        position: relative;
+        background-color: rgba(51, 49, 49, 0.496);
+        box-shadow: 0px 2px 20px rgb(45, 45, 45);
+    
+    }
+    
+    #header a.logo {
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 2.5rem;
+        display: inline-block;
+        padding: 0px 0px 0px 35px;
+        position: absolute;
+        top:10px;
+        left:20px;
+    }
+    
+    #header a.logo span {
+        font-weight: 900;
+        color: #ffffff;
+    }
+    #header a.logo h2 {
+        font-weight: 500;
+        text-indent: 85px;
+    }
+    
+    #header .menu {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        height: 55px;
+        top: 5px;
+        float: right;
+        right: 2px;
+        color: rgb(189, 189, 189);
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    
+    #header .menu ul {
+        width: 100%;
+        list-style: none;
+        border-bottom: 0px solid rgb(0, 0, 0);
+        border-top: 0px solid rgb(0, 0, 0);
+        border-radius: 100px;
+    }
+    
+    #header .menu ul li {
+        display: inline-block;
+    }
+    
+    #header .menu ul li a {
+
+        color: rgba(189, 189, 189, 0);
+        font-size: 1.5rem;
+        display: inline-block;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.5rem;
+        border-radius: 25px;
+        padding: 10px 28px 10px 28px;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover img {
+        opacity: 1;
+    }
+    
+    #header .menu li .dropdown .dropbtn {
+        position: absolute;
+        right: 0px;
+        top: 42px;
+        border: none;
+        outline: none;
+        color: rgb(189, 189, 189);;
+        background-color: inherit;
+        font: inherit; 
+        margin: 0; 
+    }
+    
+    #header .menu .dropdown:hover .dropbtn {
+        top: 30px;
+        right: 2px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.5rem;
+        border-radius: 25px;
+        padding: 10px 26px 10px 26px;
+    }
+    
+    #header .menu .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #292727da;
+        width: 20%;
+        height: auto;
+        top: 85px;
+        right: 1%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    
+    
+    #header .menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #header .menu .column {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header .menu .column a {
+        float: none;
+        color: rgb(255, 255, 255);
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        pointer-events: all;
+    }
+    
+    #header .menu .column a:hover {
+        background-color: #dddddd3d;
+        padding: 14px 0px 14px 0px;
+        border-radius: 50px;
+        pointer-events: all;
+    }
+    
+    #header .menu .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #header .menu .dropdown .dropdown-content .row .column .responsive a {
+        color: rgb(255, 255, 255);
+        pointer-events: all;
+    }
+}
+
+@media all and (max-width: 768px){
+    body {
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hokej.jpeg) no-repeat top center;
+        background-size: 150%;
+        backdrop-filter: blur(10px);
+    }
+    
+    #header {
+        min-height: 120px;
+        width: 100%;
+        color: #FFF;
+        position: relative;
+        background-color: rgba(51, 49, 49, 0.496);
+        box-shadow: 0px 2px 20px rgb(45, 45, 45);
+    
+    }
+    
+    #header a.logo {
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 2.3rem;
+        display: inline-block;
+        padding: 0px 0px 0px 30px;
+        position: absolute;
+        top:10px;
+        left:15px;
+    }
+    
+    #header a.logo span {
+        font-weight: 800;
+        color: #ffffff;
+    }
+    #header a.logo h2 {
+        font-weight: 500;
+        text-indent: 80px;
+    }
+    
+    #header .menu {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        height: 55px;
+        top: 5px;
+        float: right;
+        right: 2px;
+        color: rgb(189, 189, 189);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    #header .menu ul {
+        width: 100%;
+        list-style: none;
+        border-bottom: 0px solid rgb(0, 0, 0);
+        border-top: 0px solid rgb(0, 0, 0);
+        border-radius: 100px;
+    }
+    
+    #header .menu ul li {
+        display: inline-block;
+    }
+    
+    #header .menu ul li a {
+
+        color: rgba(189, 189, 189, 0);
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 28px 10px 28px;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover img {
+        opacity: 1;
+    }
+    
+    #header .menu li .dropdown .dropbtn {
+        position: absolute;
+        right: 20px;
+        top: 37px;
+        border: none;
+        outline: none;
+        color: rgb(189, 189, 189);;
+        background-color: inherit;
+        font: inherit; 
+        margin: 0; 
+    }
+    
+    #header .menu .dropdown:hover .dropbtn {
+        top: 25px;
+        right: 22px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 26px 10px 26px;
+    }
+    
+    #header .menu .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #292727da;
+        width: 25%;
+        height: auto;
+        top: 85px;
+        right: 1%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    
+    
+    #header .menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #header .menu .column {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header .menu .column a {
+        float: none;
+        color: rgb(255, 255, 255);
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        pointer-events: all;
+    }
+    
+    #header .menu .column a:hover {
+        background-color: #dddddd3d;
+        padding: 14px 0px 14px 0px;
+        border-radius: 50px;
+        pointer-events: all;
+    }
+    
+    #header .menu .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #header .menu .dropdown .dropdown-content .row .column .responsive a {
+        color: rgb(255, 255, 255);
+        pointer-events: all;
+    }
+    
+    /*------------*/
+    .main {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .main .match {
+        position: absolute;
+        top: 10px;
+        height: 80px;
+        width: 100%;
+        background-color: rgba(23, 23, 23, 0.244);
+    }
+    
+    .main .match h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        font-size: 2.5rem;
+        color: rgba(255, 255, 255, 0.826);
+    }
+    
+    .main .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 100px 100px;
+        gap: 50px;
+        justify-content: center;
+        padding-top: 110px;
+    }
+    
+    .main .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .main .container .game img {
+        margin: 20px 13% 20px 13%;
+        display: inline-flex;
+        width: 70px;
+    }
+    
+    .main .container .game p {
+        margin-top: -75px;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.305);
+    }
+    
+    .zapas .upcoming {
+        background-color: rgba(0, 0, 0, 0.199);
+        width: 100%;
+        height: 70%;
+        box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
+        background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
+    }
+    
+    .zapas .upcoming .head {
+        position: relative;
+    
+    }
+    
+    .zapas .upcoming .head h2 {
+        color: rgba(255, 255, 255, 0.826);
+        padding: 50px;
+        font-size: 1.8rem;
+        background-color:  rgba(23, 23, 23, 0.244);
+    }
+    
+    .zapas .upcoming .container {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 120px 120px 120px 120px;
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .zapas .upcoming .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+    }
+    
+    .zapas .upcoming .container .game .panel {
+        background-color: rgba(255, 255, 255, 0.519);
+        width: 100%;
+        height: 30px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        padding-left: 40px;
+    
+    }
+    
+    .zapas .upcoming .container .game .udaje {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto ;
+    }
+    
+    .zapas .upcoming .container .game .udaje h5 {
+        padding-top: 30px;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.83);
+    
+    }
+    
+    .zapas .upcoming .container .game .udaje .image {
+        padding-top: 15px;
+    }
+    
+    .zapas .upcoming .container .game .udaje .image img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /*--------------*/
+    
+    footer {
+        position: static;
+        display: block;
+    }
+    
+    footer .footer {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        background-color: #3c3a3aba;
+        box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
+    }
+    
+    footer .footer .logof {
+        position: relative;
+        font-size: 2.3rem;
+        text-decoration: none;
+        left: 45%;
+    }
+    
+    footer .footer .logof  span {
+        position: absolute;
+        color: white;
+        font-weight: 900;
+    }
+    
+    footer .footer .logof  h2 {
+        font-weight: 500;
+        position: absolute;
+        color: white;
+        text-indent: 85%;
+    }
+    
+    footer .line {
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.333);
+        top: 95px;
+        left: 50%; 
+        transform:translate(-50%,-50%);
+    }
+    
+    footer .contact {
+        position: relative;
+        right: 5%;
+        width: 100%;
+        top: 60px;
+        opacity: 0.6;
+    }
+    
+    footer .contact .facebook a img {
+        position: absolute;
+        right: 160px;
+        width: 50px;
+    }
+    
+    footer .contact .instagram a img {
+        position: absolute;
+        right: 80px;
+        width: 50px;
+    }
+    
+    footer .contact .twitter a img {
+        position: absolute;
+        right: 0px;
+        width: 50px;
+    }
+    
+    footer .contact .text {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .contact .text p {
+        color: rgb(255, 255, 255);
+        padding-left: 200px;
+    }
+}
 
 
 
