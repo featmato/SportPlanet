@@ -308,6 +308,40 @@ body {
     width: 60px;
     height: 60px;
 }
+/*
+.container {
+	max-width: 1600px;
+	margin:0 auto;
+	padding: 5px;
+}
+
+.row .col {
+	border:5px solid #ffffff;
+	color:#FFF;
+	font-weight: bold;
+	padding:15px;
+	text-align: center;
+ 
+}
+.row-orange .col {
+	background:#00000074;
+    height: 120px;
+}
+.row-green .col {
+	background:#00000079;
+    height: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+	.row-orange .col {
+		width: 50%;
+	}
+	.row-green .col {
+		width: 50%;
+	}
+}
+*/
+
 
 /*--------------*/
 
@@ -710,7 +744,7 @@ footer .contact .text p {
     .main .match {
         position: absolute;
         top: 10px;
-        height: 80px;
+        height: 70px;
         width: 100%;
         background-color: rgba(23, 23, 23, 0.244);
     }
@@ -720,7 +754,7 @@ footer .contact .text p {
         justify-content: center;
         align-items: center;
         padding-top: 10px;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         color: rgba(255, 255, 255, 0.826);
     }
     
@@ -728,9 +762,9 @@ footer .contact .text p {
         display: grid;
         grid-template-columns: 40% 40%;
         grid-template-rows: 100px 100px;
-        gap: 50px;
+        gap: 45px;
         justify-content: center;
-        padding-top: 110px;
+        padding-top: 100px;
     }
     
     .main .container .game {
@@ -742,13 +776,14 @@ footer .contact .text p {
     .main .container .game img {
         margin: 20px 13% 20px 13%;
         display: inline-flex;
-        width: 70px;
+        width: 65px;
+        height: 65px;
     }
     
     .main .container .game p {
         margin-top: -75px;
         font-weight: 700;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: white;
         background-color: rgba(0, 0, 0, 0.305);
     }
@@ -756,7 +791,7 @@ footer .contact .text p {
     .zapas .upcoming {
         background-color: rgba(0, 0, 0, 0.199);
         width: 100%;
-        height: 70%;
+        height: 60%;
         box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
         background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
     }
@@ -768,8 +803,8 @@ footer .contact .text p {
     
     .zapas .upcoming .head h2 {
         color: rgba(255, 255, 255, 0.826);
-        padding: 50px;
-        font-size: 1.8rem;
+        padding: 40px;
+        font-size: 1.6rem;
         background-color:  rgba(23, 23, 23, 0.244);
     }
     
@@ -777,7 +812,7 @@ footer .contact .text p {
         display: grid;
         grid-template-columns: 80%;
         grid-template-rows: 120px 120px 120px 120px;
-        gap: 40px;
+        gap: 30px;
         justify-content: center;
     }
     
@@ -798,7 +833,10 @@ footer .contact .text p {
         grid-template-rows: 100%;
         grid-template-columns: auto auto auto;
         padding-left: 40px;
-    
+    }
+
+    .zapas .upcoming .container .game .panel h3 {
+        font-size: 1.7rem;
     }
     
     .zapas .upcoming .container .game .udaje {
@@ -809,7 +847,7 @@ footer .contact .text p {
     
     .zapas .upcoming .container .game .udaje h5 {
         padding-top: 30px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: rgba(255, 255, 255, 0.83);
     
     }
@@ -819,8 +857,8 @@ footer .contact .text p {
     }
     
     .zapas .upcoming .container .game .udaje .image img {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
     
     /*--------------*/
@@ -833,16 +871,16 @@ footer .contact .text p {
     footer .footer {
         position: absolute;
         width: 100%;
-        height: 200px;
+        height: 180px;
         background-color: #3c3a3aba;
         box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
     }
     
     footer .footer .logof {
         position: relative;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         text-decoration: none;
-        left: 45%;
+        left: 42%;
     }
     
     footer .footer .logof  span {
@@ -855,7 +893,7 @@ footer .contact .text p {
         font-weight: 500;
         position: absolute;
         color: white;
-        text-indent: 85%;
+        text-indent: 80%;
     }
     
     footer .line {
@@ -878,20 +916,20 @@ footer .contact .text p {
     
     footer .contact .facebook a img {
         position: absolute;
-        right: 160px;
-        width: 50px;
+        right: 100px;
+        width: 40px;
     }
     
     footer .contact .instagram a img {
         position: absolute;
-        right: 80px;
-        width: 50px;
+        right: 50px;
+        width: 40px;
     }
     
     footer .contact .twitter a img {
         position: absolute;
         right: 0px;
-        width: 50px;
+        width: 40px;
     }
     
     footer .contact .text {
@@ -901,10 +939,1123 @@ footer .contact .text p {
     
     footer .contact .text p {
         color: rgb(255, 255, 255);
-        padding-left: 200px;
+        padding-left: 120px;
     }
 }
 
+@media all and (max-width: 676px){
+    body {
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hokej.jpeg) no-repeat top center;
+        background-size: 150%;
+        backdrop-filter: blur(10px);
+    }
+    
+    #header {
+        min-height: 110px;
+        width: 100%;
+        color: #FFF;
+        position: relative;
+        background-color: rgba(51, 49, 49, 0.496);
+        box-shadow: 0px 2px 20px rgb(45, 45, 45);
+    
+    }
+    
+    #header a.logo {
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 2.0rem;
+        display: inline-block;
+        padding: 0px 0px 0px 20px;
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+    
+    #header a.logo span {
+        font-weight: 800;
+        color: #ffffff;
+    }
+    #header a.logo h2 {
+        font-weight: 400;
+        text-indent: 70px;
+    }
+    
+    #header .menu {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        height: 55px;
+        top: 5px;
+        float: right;
+        right: 2px;
+        color: rgb(189, 189, 189);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    #header .menu ul {
+        width: 100%;
+        list-style: none;
+        border-bottom: 0px solid rgb(0, 0, 0);
+        border-top: 0px solid rgb(0, 0, 0);
+        border-radius: 100px;
+    }
+    
+    #header .menu ul li {
+        display: inline-block;
+    }
+    
+    #header .menu ul li a {
+
+        color: rgba(189, 189, 189, 0);
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 28px 10px 28px;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover img {
+        opacity: 1;
+    }
+    
+    #header .menu li .dropdown .dropbtn {
+        position: absolute;
+        right: 20px;
+        top: 37px;
+        border: none;
+        outline: none;
+        color: rgb(189, 189, 189);;
+        background-color: inherit;
+        font: inherit; 
+        margin: 0; 
+    }
+    
+    #header .menu .dropdown:hover .dropbtn {
+        top: 25px;
+        right: 22px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 26px 10px 26px;
+    }
+    
+    #header .menu .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #292727da;
+        width: 38%;
+        height: auto;
+        top: 85px;
+        right: 3%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+        z-index: 1;
+        border-radius: 20px;
+    
+    }
+    
+    
+    #header .menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #header .menu .column {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header .menu .column a {
+        float: none;
+        color: rgb(255, 255, 255);
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        pointer-events: all;
+        font-size: 1.3rem;
+    }
+    
+    #header .menu .column a:hover {
+        background-color: #dddddd3d;
+        padding: 10px 0px 10px 0px;
+        border-radius: 50px;
+        pointer-events: all;
+        font-size: 1.3rem;
+    }
+    
+    #header .menu .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #header .menu .dropdown .dropdown-content .row .column .responsive a {
+        color: rgb(255, 255, 255);
+        pointer-events: all;
+    }
+    
+    /*------------*/
+    .main {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .main .match {
+        position: absolute;
+        top: 10px;
+        height: 60px;
+        width: 100%;
+        background-color: rgba(23, 23, 23, 0.244);
+    }
+    
+    .main .match h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 9px;
+        font-size: 1.7rem;
+        color: rgba(255, 255, 255, 0.826);
+    }
+    
+    .main .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 90px 90px;
+        gap: 25px;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    
+    .main .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .main .container .game img {
+        margin: 20px 13% 20px 13%;
+        display: inline-flex;
+        width: 46px;
+        height: 46px;
+    }
+    
+    .main .container .game p {
+        margin-top: -58px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.305);
+    }
+    
+    .zapas .upcoming {
+        background-color: rgba(0, 0, 0, 0.199);
+        width: 100%;
+        height: 60%;
+        box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
+        background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
+    }
+    
+    .zapas .upcoming .head {
+        position: relative;
+    
+    }
+    
+    .zapas .upcoming .head h2 {
+        color: rgba(255, 255, 255, 0.826);
+        padding: 30px;
+        font-size: 1.4rem;
+        background-color:  rgba(23, 23, 23, 0.244);
+    }
+    
+    .zapas .upcoming .container {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 90px 90px 90px 60px;
+        gap: 25px;
+        justify-content: center;
+    }
+    
+    .zapas .upcoming .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+    }
+    
+    .zapas .upcoming .container .game .panel {
+        background-color: rgba(255, 255, 255, 0.519);
+        width: 100%;
+        height: 20px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        padding-left: 30px;
+    }
+
+    .zapas .upcoming .container .game .panel h3 {
+        font-size: 1.1rem;
+    }
+    
+    .zapas .upcoming .container .game .udaje {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto ;
+    }
+    
+    .zapas .upcoming .container .game .udaje h5 {
+        padding-top: 22px;
+        font-size: 1.0rem;
+        color: rgba(255, 255, 255, 0.83);
+    
+    }
+    
+    .zapas .upcoming .container .game .udaje .image {
+        padding-top: 15px;
+    }
+    
+    .zapas .upcoming .container .game .udaje .image img {
+        width: 43px;
+        height: 43px;
+    }
+    
+    /*--------------*/
+    
+    footer {
+        position: static;
+        display: block;
+    }
+    
+    footer .footer {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #3c3a3aba;
+        box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
+    }
+    
+    footer .footer .logof {
+        position: relative;
+        font-size: 1.8rem;
+        text-decoration: none;
+        left: 39%;
+    }
+    
+    footer .footer .logof  span {
+        position: absolute;
+        color: white;
+        font-weight: 900;
+    }
+    
+    footer .footer .logof  h2 {
+        font-weight: 500;
+        position: absolute;
+        color: white;
+        text-indent: 90%;
+        font-size: 1.7rem;
+    }
+    
+    footer .line {
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.333);
+        top: 75px;
+        left: 50%; 
+        transform:translate(-50%,-50%);
+    }
+    
+    footer .contact {
+        position: relative;
+        right: 5%;
+        width: 100%;
+        top: 50px;
+        opacity: 0.6;
+    }
+    
+    footer .contact .facebook a img {
+        position: absolute;
+        right: 80px;
+        width: 30px;
+    }
+    
+    footer .contact .instagram a img {
+        position: absolute;
+        right: 40px;
+        width: 30px;
+    }
+    
+    footer .contact .twitter a img {
+        position: absolute;
+        right: 0px;
+        width: 30px;
+    }
+    
+    footer .contact .text {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .contact .text p {
+        color: rgb(255, 255, 255);
+        padding-left: 70px;
+        font-size: 0.7rem;
+    }
+}
+
+
+@media all and (max-width: 480px){
+    body {
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hokej.jpeg) no-repeat top center;
+        background-size: 150%;
+        backdrop-filter: blur(10px);
+    }
+    
+    #header {
+        min-height: 110px;
+        width: 100%;
+        color: #FFF;
+        position: relative;
+        background-color: rgba(51, 49, 49, 0.496);
+        box-shadow: 0px 2px 20px rgb(45, 45, 45);
+    
+    }
+    
+    #header a.logo {
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 2.0rem;
+        display: inline-block;
+        padding: 0px 0px 0px 20px;
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+    
+    #header a.logo span {
+        font-weight: 800;
+        color: #ffffff;
+    }
+    #header a.logo h2 {
+        font-weight: 400;
+        text-indent: 70px;
+    }
+    
+    #header .menu {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        height: 55px;
+        top: 5px;
+        float: right;
+        right: 2px;
+        color: rgb(189, 189, 189);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    #header .menu ul {
+        width: 100%;
+        list-style: none;
+        border-bottom: 0px solid rgb(0, 0, 0);
+        border-top: 0px solid rgb(0, 0, 0);
+        border-radius: 100px;
+    }
+    
+    #header .menu ul li {
+        display: inline-block;
+    }
+    
+    #header .menu ul li a {
+
+        color: rgba(189, 189, 189, 0);
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 28px 10px 28px;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover img {
+        opacity: 1;
+    }
+    
+    #header .menu li .dropdown .dropbtn {
+        position: absolute;
+        right: 20px;
+        top: 37px;
+        border: none;
+        outline: none;
+        color: rgb(189, 189, 189);;
+        background-color: inherit;
+        font: inherit; 
+        margin: 0; 
+    }
+    
+    #header .menu .dropdown:hover .dropbtn {
+        top: 25px;
+        right: 22px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 26px 10px 26px;
+    }
+    
+    #header .menu .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #292727da;
+        width: 38%;
+        height: auto;
+        top: 85px;
+        right: 3%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+        z-index: 1;
+        border-radius: 20px;
+    
+    }
+    
+    
+    #header .menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #header .menu .column {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header .menu .column a {
+        float: none;
+        color: rgb(255, 255, 255);
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        pointer-events: all;
+        font-size: 1.3rem;
+    }
+    
+    #header .menu .column a:hover {
+        background-color: #dddddd3d;
+        padding: 10px 0px 10px 0px;
+        border-radius: 50px;
+        pointer-events: all;
+        font-size: 1.3rem;
+    }
+    
+    #header .menu .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #header .menu .dropdown .dropdown-content .row .column .responsive a {
+        color: rgb(255, 255, 255);
+        pointer-events: all;
+    }
+    
+    /*------------*/
+    .main {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .main .match {
+        position: absolute;
+        top: 10px;
+        height: 60px;
+        width: 100%;
+        background-color: rgba(23, 23, 23, 0.244);
+    }
+    
+    .main .match h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 9px;
+        font-size: 1.7rem;
+        color: rgba(255, 255, 255, 0.826);
+    }
+    
+    .main .container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 90px 90px;
+        gap: 25px;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    
+    .main .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .main .container .game img {
+        margin: 20px 13% 20px 13%;
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .main .container .game p {
+        margin-top: -50px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.305);
+    }
+    
+    .zapas .upcoming {
+        background-color: rgba(0, 0, 0, 0.199);
+        width: 100%;
+        height: 60%;
+        box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
+        background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
+    }
+    
+    .zapas .upcoming .head {
+        position: relative;
+    
+    }
+    
+    .zapas .upcoming .head h2 {
+        color: rgba(255, 255, 255, 0.826);
+        padding: 30px;
+        font-size: 1.4rem;
+        background-color:  rgba(23, 23, 23, 0.244);
+    }
+    
+    .zapas .upcoming .container {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 90px 90px 90px 60px;
+        gap: 25px;
+        justify-content: center;
+    }
+    
+    .zapas .upcoming .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+    }
+    
+    .zapas .upcoming .container .game .panel {
+        background-color: rgba(255, 255, 255, 0.519);
+        width: 100%;
+        height: 20px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        padding-left: 30px;
+    }
+
+    .zapas .upcoming .container .game .panel h3 {
+        font-size: 1.1rem;
+    }
+    
+    .zapas .upcoming .container .game .udaje {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto ;
+    }
+    
+    .zapas .upcoming .container .game .udaje h5 {
+        padding-top: 22px;
+        font-size: 1.0rem;
+        color: rgba(255, 255, 255, 0.83);
+    
+    }
+    
+    .zapas .upcoming .container .game .udaje .image {
+        padding-top: 15px;
+    }
+    
+    .zapas .upcoming .container .game .udaje .image img {
+        width: 43px;
+        height: 43px;
+    }
+    
+    /*--------------*/
+    
+    footer {
+        position: static;
+        display: block;
+    }
+    
+    footer .footer {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #3c3a3aba;
+        box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
+    }
+    
+    footer .footer .logof {
+        position: relative;
+        font-size: 1.8rem;
+        text-decoration: none;
+        left: 39%;
+    }
+    
+    footer .footer .logof  span {
+        position: absolute;
+        color: white;
+        font-weight: 900;
+    }
+    
+    footer .footer .logof  h2 {
+        font-weight: 500;
+        position: absolute;
+        color: white;
+        text-indent: 90%;
+        font-size: 1.7rem;
+    }
+    
+    footer .line {
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.333);
+        top: 75px;
+        left: 50%; 
+        transform:translate(-50%,-50%);
+    }
+    
+    footer .contact {
+        position: relative;
+        right: 5%;
+        width: 100%;
+        top: 50px;
+        opacity: 0.6;
+    }
+    
+    footer .contact .facebook a img {
+        position: absolute;
+        right: 80px;
+        width: 30px;
+    }
+    
+    footer .contact .instagram a img {
+        position: absolute;
+        right: 40px;
+        width: 30px;
+    }
+    
+    footer .contact .twitter a img {
+        position: absolute;
+        right: 0px;
+        width: 30px;
+    }
+    
+    footer .contact .text {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .contact .text p {
+        color: rgb(255, 255, 255);
+        padding-left: 70px;
+        font-size: 0.7rem;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    body {
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hokej.jpeg) no-repeat top center;
+        background-size: 120%;
+        backdrop-filter: blur(10px);
+    }
+    
+    #header {
+        min-height: 85px;
+        width: 100%;
+        color: #FFF;
+        position: relative;
+        background-color: rgba(51, 49, 49, 0.496);
+        box-shadow: 0px 2px 20px rgb(45, 45, 45);
+    
+    }
+    
+    #header a.logo {
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 0px 0px 0px 20px;
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+    
+    #header a.logo span {
+        font-weight: 800;
+        color: #ffffff;
+    }
+    #header a.logo h2 {
+        font-weight: 400;
+        text-indent: 60px;
+        font-size: 1.4rem;
+    }
+    
+    #header .menu {
+        position: relative;
+        text-align: center;
+        width: 70%;
+        height: 55px;
+        top: 5px;
+        float: right;
+        right: 2px;
+        color: rgb(189, 189, 189);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    #header .menu ul {
+        width: 100%;
+        list-style: none;
+        border-bottom: 0px solid rgb(0, 0, 0);
+        border-top: 0px solid rgb(0, 0, 0);
+        border-radius: 100px;
+    }
+    
+    #header .menu ul li {
+        display: inline-block;
+    }
+    
+    #header .menu ul li a {
+
+        color: rgba(189, 189, 189, 0);
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover {
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 10px 0px 10px 0px;
+        pointer-events: none;
+    }
+    
+    #header .menu ul li a:hover img {
+        opacity: 1;
+    }
+    
+    #header .menu li .dropdown .dropbtn {
+        position: absolute;
+        right: 7px;
+        top: 30px;
+        border: none;
+        outline: none;
+        color: rgb(189, 189, 189);;
+        background-color: inherit;
+        font: inherit; 
+        margin: 0; 
+        font-size: 1.2rem;
+    }
+    
+    #header .menu .dropdown:hover .dropbtn {
+        top: 20px;
+        right: 20px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 1.4rem;
+        border-radius: 25px;
+        padding: 8px 15px 8px 15px;
+        font-size: 1.2rem;
+    }
+    
+    #header .menu .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #292727da;
+        width: 43%;
+        height: auto;
+        top: 65px;
+        right: 3%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.31);
+        z-index: 1;
+        border-radius: 20px;
+    
+    }
+    
+    
+    #header .menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #header .menu .column {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #header .menu .column a {
+        float: none;
+        color: rgb(255, 255, 255);
+        padding: 9px;
+        text-decoration: none;
+        display: block;
+        pointer-events: all;
+        font-size: 1.0rem;
+    }
+    
+    #header .menu .column a:hover {
+        background-color: #dddddd3d;
+        padding: 7px 0px 7px 0px;
+        border-radius: 50px;
+        pointer-events: all;
+        font-size: 1.0rem;
+    }
+    
+    #header .menu .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #header .menu .dropdown .dropdown-content .row .column .responsive a {
+        color: rgb(255, 255, 255);
+        pointer-events: all;
+    }
+    
+    /*------------*/
+    .main {
+        position: relative;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+    .main .match {
+        position: absolute;
+        top: 9px;
+        height: 55px;
+        width: 100%;
+        background-color: rgba(23, 23, 23, 0.244);
+    }
+    
+    .main .match h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.826);
+    }
+    
+    .main .container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 80px 80px;
+        gap: 15px;
+        justify-content: center;
+        padding-top: 70px;
+    }
+    
+    .main .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .main .container .game img {
+        margin: 20px 13% 20px 13%;
+        display: inline-flex;
+        width: 34px;
+        height: 34px;
+    }
+    
+    .main .container .game p {
+        margin-top: -50px;
+        font-weight: 700;
+        font-size: 1.0rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.305);
+    }
+    
+    .zapas .upcoming {
+        background-color: rgba(0, 0, 0, 0.199);
+        width: 100%;
+        height: 50%;
+        box-shadow: 0px -20px 20px 5px rgba(0, 0, 0, 0.241);
+        background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0.37))
+    }
+    
+    .zapas .upcoming .head {
+        position: relative;
+    }
+    
+    .zapas .upcoming .head h2 {
+        color: rgba(255, 255, 255, 0.826);
+        padding: 25px;
+        font-size: 1.1rem;
+        background-color:  rgba(23, 23, 23, 0.244);
+    }
+    
+    .zapas .upcoming .container {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 80px 80px 80px 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .zapas .upcoming .container .game {
+        background-color: rgba(0, 0, 0, 0.448);
+        border-radius: 25px;
+    }
+    
+    .zapas .upcoming .container .game .panel {
+        background-color: rgba(255, 255, 255, 0.519);
+        width: 100%;
+        height: 20px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        padding-left: 15px;
+    }
+
+    .zapas .upcoming .container .game .panel h3 {
+        font-size: 1.0rem;
+    }
+    
+    .zapas .upcoming .container .game .udaje {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto ;
+    }
+    
+    .zapas .upcoming .container .game .udaje h5 {
+        padding-top: 15px;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.83);
+    
+    }
+    
+    .zapas .upcoming .container .game .udaje .image {
+        padding-top: 10px;
+    }
+    
+    .zapas .upcoming .container .game .udaje .image img {
+        width: 33px;
+        height: 33px;
+    }
+    
+    /*--------------*/
+    
+    footer {
+        position: static;
+        display: block;
+    }
+    
+    footer .footer {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: #3c3a3aba;
+        box-shadow: 0px 6px 10px rgba(205, 203, 203, 0.371) inset;
+    }
+    
+    footer .footer .logof {
+        position: relative;
+        font-size: 1.3rem;
+        text-decoration: none;
+        left: 38%;
+    }
+    
+    footer .footer .logof  span {
+        position: absolute;
+        color: white;
+        font-weight: 900;
+    }
+    
+    footer .footer .logof  h2 {
+        font-weight: 500;
+        position: absolute;
+        color: white;
+        text-indent: 95%;
+        font-size: 1.1rem;
+    }
+    
+    footer .line {
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.333);
+        top: 55px;
+        left: 50%; 
+        transform:translate(-50%,-50%);
+    }
+    
+    footer .contact {
+        position: relative;
+        right: 5%;
+        width: 100%;
+        top: 35px;
+        opacity: 0.6;
+    }
+    
+    footer .contact .facebook a img {
+        position: absolute;
+        right: 60px;
+        width: 20px;
+    }
+    
+    footer .contact .instagram a img {
+        position: absolute;
+        right: 30px;
+        width: 20px;
+    }
+    
+    footer .contact .twitter a img {
+        position: absolute;
+        right: 0px;
+        width: 20px;
+    }
+    
+    footer .contact .text {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .contact .text p {
+        color: rgb(255, 255, 255);
+        padding-left: 30px;
+        font-size: 0.5rem;
+    }
+}
 
 
 
